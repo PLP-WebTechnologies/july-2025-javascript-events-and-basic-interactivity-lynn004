@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climate Change: Rising Water Levels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌊 Climate Change: Rising Water Levels</h1>
+    <p>Learn, interact, and take action to protect our planet.</p>
+  </header>
+
+  <!-- Section: Random Facts -->
+  <section class="facts">
+    <h2>Did You Know?</h2>
+    <button id="factBtn">Show Climate Fact</button>
+    <p id="factDisplay" class="fact-text"></p>
+  </section>
+
+  <!-- Section: Water Level Simulation -->
+  <section class="simulation">
+    <h2>Simulate Rising Water Levels</h2>
+    <p>Move the slider to see how water levels rise 🌍</p>
+    <input type="range" id="waterSlider" min="0" max="100" value="20" />
+    <div class="water-container">
+      <div id="waterLevel"></div>
+    </div>
+  </section>
+
+  <!-- Section: Pledge Form -->
+  <section class="pledge">
+    <h2>Take a Climate Action Pledge</h2>
+    <form id="pledgeForm" novalidate>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+      <small id="nameError" class="error"></small>
+
+      <label for="email">Your Email:</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" />
+      <small id="emailError" class="error"></small>
+
+      <label for="action">Your Action:</label>
+      <input type="text" id="action" name="action" placeholder="E.g., Planting trees" />
+      <small id="actionError" class="error"></small>
+
+      <button type="submit">Submit Pledge</button>
+    </form>
+    <p id="successMessage" class="success"></p>
+  </section>
+
+  <footer>
+    <p>🌱 Together we can fight climate change. &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
